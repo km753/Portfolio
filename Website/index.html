@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/65f12de1cd.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Kelly Moran</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">HOME</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">ABOUT</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                    <div>KELLY MORAN</div>
+                        <div class="one"><a href="https://www.linkedin.com/in/kelly-m-9652952a" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+                        <div class="two"><a href="https://github.com/KM753" target="_blank"><i class="fab fa-github"></i></a></div>
+                        <div class="three"><a href="mailto:kmoran753@gmail.com"><i class="far fa-envelope"></i></a></div>
+            </div>
+        </div>
+    </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)" alt="computer screen with code">
+                    </div>
+                        
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            <a href="frontend.html">Front-End Projects</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)" alt="open laptop"></div>
+                        
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            <a href="backend.html">Back-End Projects</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)" alt="woman typing on laptop"></div>
+                        
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            <a href="graphicdesign.html">Graphic Design Projects</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer><p>&copy;  <a href="mailto:kmoran753@gmail.com">Kelly Moran </a>. Do not reproduce without permission. All rights reserved.</p></footer>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+    })
+
+        portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>

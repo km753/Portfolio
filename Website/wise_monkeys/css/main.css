@@ -1,0 +1,35 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 1em;
+    text-align: center;
+    color: #360;
+}
+
+section {
+    min-width: 900px;
+    font-family: Courier
+}
+
+#monkeys {
+    width: 500px;
+    margin: 0 auto;
+}
+
+/*This is the same rule as the .block class*/
+#monkeys div {
+    background-color: #630;
+    background-position:  50% 50%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 210px;
+    margin: 1em;
+    padding: 0;
+    width: 210px;
+}
+
+.SeeNoEvil { background-image: url(../img/seenoevil.png); }
+.HearNoEvil { background-image: url(../img/hearnoevil.png); }
+.SpeakNoEvil { background-image: url(../img/speaknoevil.png); }

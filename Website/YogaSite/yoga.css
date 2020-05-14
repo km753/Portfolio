@@ -1,0 +1,74 @@
+* { 
+    box-sizing: border-box; 
+}
+
+header, nav, main, footer { 
+    display: block;
+}
+
+body { 
+    background-color: #3F2860;
+    color: #3F2860;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+#wrapper { 
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F5F5F5;
+    min-width: 1200px;
+    max-width: 1480px;
+}
+
+header { 
+    background-color: #9BC1C2;
+    background-image: url(lilyheader.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 150px;
+}
+
+.logo {
+    
+    
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    float: left;
+}
+
+nav li {
+    list-style: none;
+    border-style: outset;
+    border-width: 3px;
+    padding: 10px;
+    margin-right: 20px;
+    
+    
+}
+
+a:active {
+    color:#9BC1C2;
+
+}
+
+.address {
+    margin: 20px;
+    
+}
+
+footer {
+    background-color: #9BC1C2;
+    text-align: center;
+    font-style: italic;
+}
+
+
+

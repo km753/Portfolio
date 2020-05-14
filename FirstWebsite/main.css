@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: Arial, Helvetica,sans-serif;
+    font-size: 14px;
+    background-color: #008fb3;
+    
+}
+
+.container {
+    width:90%;
+    margin:auto;
+    overflow:hidden;
+}
+
+header {
+    color: #99ebff;
+    padding-top:30px;
+    min-height:70px;
+    border-bottom: #99ebff 3px solid;
+}
+
+header .logo {
+    float: left;
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header a{
+    color:#99ebff;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:18px;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #0059b3;
+    font-weight:bold;
+}
+
+header ul {
+  margin:0;
+  padding:0;
+}
+
+header li{
+    float:left;
+    display:inline;
+    padding: 0 15px 0 15px;
+}
+main {
+    background-image:url(images/bg1.jpg);
+    min-height:500px;
+    text-align:center;
+    color: aliceblue;
+    border-bottom: #99ebff 3px solid;
+}
+
+main h1 {
+    margin-top:100px;
+    font-size:55px;
+    margin-bottom:10px;
+    text-shadow: 2px 2px 4px black;
+}
+
+main p {
+    font-size:20px;
+}
+
+#boxes{
+    margin-top:40px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+
+}
+
+#boxes .box img{
+    width:90px;
+}
+
+/*About Me*/
+
+.parent {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content:space-evenly;
+    align-content: flex-start;
+    box-sizing: border-box;
+    width: 80%;
+    margin: auto;
+}
+
+
+.div1 {
+    margin-top: 40px;
+}
+
+.div2 p {
+    margin-top: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.3;
+    filter: alpha(opacity=60);
+    font-size: 14pt;
+    font-weight: bold;
+    color: black;
+}
+
+/*Contact Page*/
+
+main h2 form {
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+ /*Cat Blog*/
+.cat-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cat {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    flex-basis: 30%;
+}
+
+.picture-container {
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.picture img {
+    width: 250px;
+    height: 200px;
+    line-height: 100px;
+    margin-bottom: 20px;
+}
+
+footer{
+    padding:20px;
+    margin-top:20px;
+    color:#99ebff;
+    text-align: center;
+    font-size: 12pt;
+}
+
+
+@media(max-width: 768px){
+    *
+{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
